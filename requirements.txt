@@ -362,6 +362,7 @@ protobuf==4.21.12
     #   opentelemetry-proto
 psutil==5.9.5
     # via apache-airflow
+psycopg2==2.9.9
 pycparser==2.21
     # via cffi
 pydantic==2.4.2

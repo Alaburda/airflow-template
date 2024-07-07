@@ -6,5 +6,6 @@ export AIRFLOW_VERSION=2.7.2
 CONSTRAINT_URL="https://raw.githubusercontent.com/apache/airflow/constraints-${AIRFLOW_VERSION}/constraints-${PYTHON_VERSION}.txt"
 uv pip install "apache-airflow==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT_URL}"
 uv pip install dbt-sqlserver==1.4.3
+uv pip install psycopg2
 uv pip freeze | uv pip compile - -o requirements.txt
 
